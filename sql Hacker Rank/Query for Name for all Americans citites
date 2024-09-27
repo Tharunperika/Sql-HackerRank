@@ -15,3 +15,9 @@ HERE QUERY:
 SELECT NAME
 FROM CITY
 WHERE COUNTRYCODE = "USA" AND POPULATION > 120000;
+---------------------------------------------------------------------
+OUTPUT:
+1.Scottsdale
+2.Corona
+3.Concord
+4.Cedar Rapids
