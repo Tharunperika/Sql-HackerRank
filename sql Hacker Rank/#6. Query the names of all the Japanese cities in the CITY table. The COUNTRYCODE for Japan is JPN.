@@ -1,0 +1,15 @@
+/* Query the names of all the Japanese cities in the CITY table. The COUNTRYCODE for Japan is JPN.
+The CITY table is described as follows:
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| ID          | int         | YES  |     | NULL    |       |
+| NAME        | varchar(17) | YES  |     | NULL    |       |
+| COUNTRYCODE | varchar(3)  | YES  |     | NULL    |       |
+| DISTRICT    | varchar(20) | YES  |     | NULL    |       |
+| POPULATION  | int         | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+--------------------------------------------------------------------*/
+QUERY HERE:
+SELECT NAME FROM CITY
+WHERE COUNTRYCODE='JPN';
