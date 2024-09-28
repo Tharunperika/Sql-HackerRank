@@ -1,0 +1,36 @@
+/* Query a list of CITY names from STATION for cities that have an even ID number. Print the results in any order, but exclude duplicates from the answer.
+The STATION table is described as follows:
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| ID          | int         | YES  |     | NULL    |       |
+| NAME        | varchar(17) | YES  |     | NULL    |       |
+| STATE       | varchar(3)  | YES  |     | NULL    |       |
+| LAT_N       | INT         | YES  |     | NULL    |       |
+| LONG-W      | int         | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+-------------------------------------------*/
+QUERY HERE:
+SELECT DISTINCT CITY FROM STATION
+WHERE MOD(ID,2)=0 ORDER BY CITY ASC;
+----------------------------------------------
+Aguanga 
+Alba 
+Albany 
+Amo 
+Andersonville 
+Archie 
+Athens 
+Atlantic Mine 
+Bainbridge 
+Baker 
+Bass Harbor 
+Bayville 
+Beaufort 
+Bellevue 
+Benedict 
+Bennington 
+Bentonville 
+Biggsville 
+Bison 
+Bono
