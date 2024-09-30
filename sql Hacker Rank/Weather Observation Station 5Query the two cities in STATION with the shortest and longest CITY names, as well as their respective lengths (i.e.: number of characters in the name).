@@ -1,1 +1,22 @@
-Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.
+?* Query the two cities in STATION with the shortest and longest CITY names, as well as their respective lengths (i.e.: number of characters in the name). If there is more than one smallest or largest city, choose the one that comes first when ordered alphabetically.
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| ID          | int         | YES  |     | NULL    |       |
+| CITY        | varchar(10) | YES  |     | NULL    |       |
+| STATE       | varchar(10) | YES  |     | NULL    |       |
+| LAT_N       | INT         | YES  |     | NULL    |       |
+| LONG-W      | int         | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+-------------------------------------------*/
+QUERY HERE:
+select city,length(city)
+from station order by
+length(city),city limit 1;
+select city,length(city)
+from station order by
+length(city)desc,city limit 1;
+-------------------------------------------------------------
+OUTPUT:
+Amo 3
+Marine On Saint Croix 21
