@@ -1,0 +1,18 @@
+/* Find the difference between the total number of CITY entries in the table and the number of distinct CITY entries in the table.
+The STATION table is described as follows:
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| ID          | int         | YES  |     | NULL    |       |
+| CITY        | varchar(10) | YES  |     | NULL    |       |
+| STATE       | varchar(10) | YES  |     | NULL    |       |
+| LAT_N       | INT         | YES  |     | NULL    |       |
+| LONG-W      | int         | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+-------------------------------------------*/
+QUERY HERE:
+select count(city)-
+count(distinct city)from station;
+------------------------------------------------------------
+OUTPUT:
+13
