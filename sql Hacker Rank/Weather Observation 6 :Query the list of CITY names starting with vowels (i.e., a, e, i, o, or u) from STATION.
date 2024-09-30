@@ -1,0 +1,81 @@
+/*Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| ID          | int         | YES  |     | NULL    |       |
+| CITY        | varchar(10) | YES  |     | NULL    |       |
+| STATE       | varchar(10) | YES  |     | NULL    |       |
+| LAT_N       | INT         | YES  |     | NULL    |       |
+| LONG-W      | int         | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+-------------------------------------------*/
+QUERY HERE:
+SELECT DISTINCT(CITY) FROM STATION 
+WHERE CITY LIKE'A%'OR CITY LIKE 'E%'OR CITY LIKE'I%'OR CITY LIKE'O%'OR CITY LIKE'U%'ORDER BY CITY ASC;
+-----------------------------------------------------------------
+OUTPUT:
+Acme
+Addison
+Agency
+Aguanga
+Alanson
+Alba
+Albany
+Albion
+Algonac
+Aliso Viejo
+Allerton
+Alpine
+Alton
+Amazonia
+Amo
+Andersonville
+Andover
+Anthony
+Archie
+Arispe
+Arkadelphia
+Arlington
+Arrowsmith
+Athens
+Atlantic Mine
+Auburn
+East China
+East Haddam
+East Irvine
+Eastlake
+Edgewater
+Effingham
+Eleele
+Elkton
+Elm Grove
+Emmett
+Equality
+Eriline
+Ermine
+Eros
+Eskridge
+Esmond
+Eufaula
+Eureka Springs
+Eustis
+Everton
+Irvington
+Oakfield
+Oconee
+Odin
+Ojai
+Olmitz
+Onaway
+Orange City
+Orange Park
+Osage City
+Osborne
+Oshtemo
+Ottertail
+Ozona
+Udall
+Ukiah
+Union Star
+Upperco
+Urbana
