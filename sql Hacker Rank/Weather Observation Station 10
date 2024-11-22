@@ -1,1 +1,15 @@
 /* Query the list of CITY names from STATION that do not end with vowels. Your result cannot contain duplicates.
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| ID          | int         | YES  |     | NULL    |       |
+| CITY        | varchar(10) | YES  |     | NULL    |       |
+| STATE       | varchar(10) | YES  |     | NULL    |       |
+| LAT_N       | INT         | YES  |     | NULL    |       |
+| LONG-W      | int         | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+----------------------------------------------------------------------------------*/
+QUERY HERE:
+SELECT DISTINCT CITY 
+FROM STATION 
+WHERE RIGHT(CITY, 1) NOT IN ('a', 'e', 'i', 'o', 'u');
